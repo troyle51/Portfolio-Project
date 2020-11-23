@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI';
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Segoe UI';
+  }
+  
+  h2 {
+    color: #3046C5;
+  }
+  
+  header h2 {
+    color: gold;
+  }
+  
+  .site-footer {
+    background-image: white;
+    padding: 20px 0;
+  }
+  
+  .jumbotron {
+    margin: 0;
+    padding: 4px;
+    background-color: white;
+    color:green;
+  }
+  
+  .row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+  }
+  
+  /* .navbar- {
+    background-color: #1cad89;
+  } */
+
+  .w-100 {
+    width: 100% !important;
+    height: 50vh;
+  }
+  
+  
