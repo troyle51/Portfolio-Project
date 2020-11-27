@@ -31,14 +31,20 @@ body {
     border-bottom: 1px ridge;
     min-height: 200px;
   }
-  
-  /* .navbar- {
-    background-color: #1cad89;
-  } */
 
   .w-100 {
     width: 100% !important;
     height: 50vh;
   }
   
-  
+  .social-right {
+    float: right;
+  }
+
+  .nav-right {
+    float: right;
+  }
+
+  .nav-left {
+    float: left;
+  }
