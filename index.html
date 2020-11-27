@@ -108,7 +108,7 @@
                         <h3>Menu</h3>
                     </div>
                     <div class="card-body">
-                        <a href="#"><img class="card-img-top" src="img/boba-bubble-tea-homemade.jpg" alt="" /></a>
+                        <a href="/menu.html"><img class="card-img-top" src="img/boba-bubble-tea-homemade.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -129,8 +129,8 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
+            <div class="row justify-content-center">
+                <div class="col-4 col-sm-4 d-none d-sm-block">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -139,10 +139,17 @@
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <p>Project Boba <br>My Boba Address<br>Philadelphia, PA 19107</p>
+                <div class="col-4 col-sm-4 text-center">
+                    <p><strong>Project Boba</strong><br>My Boba Address<br>Philadelphia, PA 19107</p>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-yelp" href="http://yelp.com/"><i
+                        class="fa fa-yelp"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
+                <div class="col-4 col-sm-4 text-center d-none d-sm-block">
+                    <h5><a href="about.html">Contact Us</a></h5>
                     <a role="button" class="btn btn-link" href="tel:+12155551234"><i class="fa fa-phone"></i>
                         1-215-555-1234</a><br>
                     <a role="button" class="btn btn-link" href="mailto:Boba@boba.co"><i class="fa fa-envelope-o"></i>
@@ -151,11 +158,33 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="back-to-top" style="display: inline;">
+        <i class="fa fa-arrow-circle-up"></i>
+        </a>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script>
+        jQuery(document).ready(function() {
+        var offset = 250;
+        var duration = 300;
+        jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+        jQuery('.back-to-top').fadeIn(duration);
+        } else {
+        jQuery('.back-to-top').fadeOut(duration);
+        }
+        });
+        jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+        })
+        });
+       </script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
 
 </body>
 
