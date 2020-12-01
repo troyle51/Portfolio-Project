@@ -1,5 +1,8 @@
 body {
     font-family: 'Segoe UI';
+    background-image: url("/img/189.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
   h1, h2, h3 {
@@ -10,12 +13,16 @@ body {
     color: #3046C5;
   }
   
-  header h2 {
+  header h1 {
+    color: white;
+  }
+
+  header h5 {
     color: gold;
   }
   
   .site-footer {
-    background-image: white;
+    background: white;
     padding: 20px 0;
   }
   
@@ -65,4 +72,8 @@ body {
     }
     .back-to-top i {
     font-size: 60px;
+    }
+
+    .fa-custom {
+      color: white;
     }
