@@ -77,3 +77,11 @@ body {
     .fa-custom {
       color: white;
     }
+
+    #reserveModal .modal-header {
+      background-color: green;
+      color: white; }
+
+      .btn-color {
+        background-color: aliceblue;
+      }

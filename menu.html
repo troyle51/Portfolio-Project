@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/5b2ca59841.js" crossorigin="anonymous"></script>
 
     <title>Project Boba</title>
 </head>
@@ -35,7 +34,7 @@
             </div>
             <div>
                 <h1>Project Boba</h1>
-                <h5>A Golden Experience</h5>
+                <h2>A Golden Experience</h2>
             </div>
             <div class="row bg-success">
                 <div class="col">
@@ -46,11 +45,13 @@
                                 <ul class="nav navbar-nav">
                                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                                     <li class="nav-item active"><a class="nav-link" href="#">Menu</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
                                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 </ul>
                             </div>
                     </nav>
+                </div>
+                <div>
+                    <a role="button" class="btn btn-lg btn-color" id="reserveButton">Order</a>
                 </div>
             </div>
         </div>
@@ -114,15 +115,190 @@
         <hr>
     </div>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Order</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="close"><span
+                  aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="reserveForm">
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Milk Tea</label>
+                    <div class="col">
+                        <select class="form-control" id="milkTea">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Caramel Milk Tea</label>
+                    <div class="col">
+                        <select class="form-control" id="caramelMTea">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Brown Sugar Milk Tea</label>
+                    <div class="col">
+                        <select class="form-control" id="brownSugarTea">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Mango Smoothie</label>
+                    <div class="col">
+                        <select class="form-control" id="mango">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Lychee Smoothie</label>
+                    <div class="col">
+                        <select class="form-control" id="lychee">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Coffee Black</label>
+                    <div class="col">
+                        <select class="form-control" id="blackCoffee">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-10 col-form-label" for="drinkType">Coffee Milk</label>
+                    <div class="col">
+                        <select class="form-control" id="milkCoffee">
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <label for="">Select Toppings</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Pearls
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Aloe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Jelly
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Pudding
+                    </label>
+                </div>
+                <hr>
+                <div class="row form-group">
+                    <label class="col-8 col-form-label" for="drinkType">Ice Level</label>
+                    <div class="col">
+                        <select class="form-control" id="milkCoffee">
+                            <option selected></option>
+                            <option>None</option>
+                            <option>Less</option>
+                            <option>Regular</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-8 col-form-label" for="drinkType">Sugar Level</label>
+                    <div class="col">
+                        <select class="form-control" id="milkCoffee">
+                            <option selected></option>
+                            <option>None</option>
+                            <option>50%</option>
+                            <option>100%</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="row form-group">
+                  <label class="col-sm-6" for="campsiteType">Choose One</label>
+                  <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                      <input type="radio" name="orderType" id="pickUp">Pick up
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="orderType" id="delivery">Delivery
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 offset-lg-9 offset-sm-6">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Order</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer class="site-footer">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 text-center">
-                    <h5>Links</h5>
+                    <h3>Links</h3>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="order.html">Order</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
@@ -136,7 +312,7 @@
                         class="fa fa-yelp"></i></a>
                 </div>
                 <div class="col-4 col-sm-4 text-center">
-                    <h5>Contact Us</h5>
+                    <h3>Contact Us</h3>
                     <a role="button" class="btn btn-link" href="tel:+12155551234"><i class="fa fa-phone"></i>
                         1-215-555-1234</a><br>
                     <a role="button" class="btn btn-link" href="mailto:Boba@boba.co"><i class="fa fa-envelope-o"></i>
@@ -150,10 +326,11 @@
         </a>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="/js/scripts.js"></script>
+    <script src="/js/scrolltop.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
 
 </body>
 
