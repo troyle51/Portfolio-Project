@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI';
-    background-image: url("/img/189.jpg");
-    background-size: cover;
+    background-image: linear-gradient(to bottom, transparent,white), url("/img/189.jpg");
+    background-size: tile;
     background-position: center;
   }
   
@@ -10,15 +10,12 @@ body {
   }
   
   h2 {
-    color: #3046C5;
+    color: white;
+
   }
   
   header h1 {
     color: white;
-  }
-
-  header h5 {
-    color: gold;
   }
   
   .site-footer {
@@ -30,12 +27,18 @@ body {
     margin: 0;
     padding: 4px;
     background-color: white;
-    color:green;
+    background: rgb(113,201,44);
+    background: linear-gradient(90deg, rgba(113,201,44,1) 0%, rgba(38,121,9,1) 35%, rgba(1,5,0,1) 98%);
   }
+  .nav-link {
+    padding-left: 0!important;
+    padding-right: 10px!important;
+    font-size: 1.5em;
+  }
+
   
   .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
+    padding: 25px 0;
     min-height: 200px;
   }
 
@@ -46,14 +49,23 @@ body {
   
   .social-right {
     float: right;
+    padding-right: 0;
+  }
+
+  .noPadding {
+    padding-right: 0!important;
   }
 
   .nav-right {
-    float: right;
+    align-items: right;
   }
 
   .nav-left {
     float: left;
+  }
+
+  .navbar {
+    padding-left: 0px!important;
   }
 
   .back-to-top {
@@ -85,3 +97,4 @@ body {
       .btn-color {
         background-color: aliceblue;
       }
+
