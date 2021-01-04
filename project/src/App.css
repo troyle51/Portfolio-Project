@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI';
+  background-image: linear-gradient(to bottom, transparent,white), url("./img/189.jpg");
+  background-size: tile;
+  background-position: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI';
+}
+
+h2 {
+  color: white;
+}
+
+header h1 {
+  color: white;
+}
+
+.site-footer {
+  background: white;
+  padding: 20px 0;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 4px;
+  background-color: white;
+  background: rgb(113,201,44);
+  background: linear-gradient(90deg, rgba(113,201,44,1) 0%, rgba(38,121,9,1) 35%, rgba(1,5,0,1) 98%);
+}
+.nav-link {
+  padding-left: 0!important;
+  padding-right: 10px!important;
+  font-size: 1.5em;
+}
+
+
+.row-content {
+  padding: 25px 0;
+  min-height: 200px;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 50vh;
+}
+
+.social-right {
+  float: right;
+  padding-right: 0;
+}
+
+.noPadding {
+  padding-right: 0!important;
+}
+
+.nav-right {
+  align-items: right;
+}
+
+.nav-left {
+  float: left;
+}
+
+.navbar {
+  padding-left: 0px!important;
+}
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #5cb85c;
+  background-color: transparent;
+  }
+  .back-to-top i {
+  font-size: 60px;
+  }
+
+  .fa-custom {
+    color: white;
+  }
+
+  #reserveModal .modal-header {
+    background-color: green;
+    color: white; }
+
+    .btn-color {
+      background-color: aliceblue;
+    }
+
