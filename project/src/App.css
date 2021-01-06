@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(to bottom, transparent,white), url("./img/189.jpg");
   background-size: tile;
   background-position: center;
+
 }
 
 h1, h2, h3 {
@@ -13,7 +14,7 @@ h2 {
   color: white;
 }
 
-header h1 {
+h1 {
   color: white;
 }
 
@@ -24,6 +25,7 @@ header h1 {
   left:0;
   bottom:0;
   right:0;
+  position: relative;
 }
 
 .jumbotron {
@@ -56,11 +58,12 @@ header h1 {
 }
 
 .noPadding {
-  padding-right: 0!important;
+  margin: 0;
+  padding: 0!important;
 }
 
 .nav-right {
-  align-items: right;
+  float: right;
 }
 
 .nav-left {
@@ -68,7 +71,7 @@ header h1 {
 }
 
 .navbar {
-  padding-left: 0px!important;
+  padding-left: 10px!important;
 }
 
 .back-to-top {
@@ -101,3 +104,6 @@ header h1 {
       background-color: aliceblue;
     }
 
+    .carousel {
+      padding: 20px;
+    }
