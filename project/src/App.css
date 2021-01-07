@@ -18,6 +18,10 @@ h1 {
   color: white;
 }
 
+h1.contactHeader {
+  color: black;
+}
+
 .site-footer {
   background: white;
   padding: 20px 0;

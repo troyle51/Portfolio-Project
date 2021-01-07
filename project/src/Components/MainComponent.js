@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Map from './MapComponent';
-import CarouselApp from './CarouselComponent';
+import MenuT from './Menu';
+import Contact from './ContactComponent';
 import { MENU } from '../shared/menu';
 import { DRINKS } from '../shared/drinks'
 import Home from './HomeComponent';
@@ -32,8 +32,9 @@ render() {
             return (
                 <React.Fragment>
                     <Header />
-                            <CarouselApp />
-                            <Map />
+                            {/* <Home /> */}
+                            <MenuT />
+                            {/* <Contact /> */}
                     <Footer />
                 </React.Fragment>
             );

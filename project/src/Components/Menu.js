@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { bsStyle } from 'react-bootstrap'
 
 class MenuT extends Component {
 
@@ -16,23 +17,23 @@ class MenuT extends Component {
                     <div className="row d-flex justify-content-center">
                         <div className="col-10 pb-5">
                             <h4 className="text-center quicksand-font text-uppercase">Milk Tea</h4>
-                            <p className="text-uppercase quicksand-font text-uppercase">Milk Tea<span>$4</span></p>
-                            <p className="text-uppercase">Caramel Milk Tea<span >$4.5</span></p>
-                            <p className="text-uppercase">Brown Sugar Milk Tea<span >$4.5</span></p>
+                            <p className="text-uppercase quicksand-font text-uppercase">Milk Tea<span className="float-right">$4</span></p>
+                            <p className="text-uppercase">Caramel Milk Tea<span className="float-right">$4.5</span></p>
+                            <p className="text-uppercase">Brown Sugar Milk Tea<span className="float-right">$4.5</span></p>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center">
                         <div className="col-10 pb-5">
                             <h4 className="text-center quicksand-font text-uppercase">Smoothies</h4>
-                            <p className="text-uppercase">Mango<span >$5</span></p>
-                            <p className="text-uppercase">Lychee<span >$5</span></p>
+                            <p className="text-uppercase">Mango<span className="float-right">$5</span></p>
+                            <p className="text-uppercase">Lychee<span className="float-right">$5</span></p>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center">
                         <div className="col-10 pb-5">
                             <h4 className="text-center quicksand-font text-uppercase">Coffee</h4>
-                            <p className="text-uppercase">Black<span >$4</span></p>
-                            <p className="text-uppercase">Milk<span >$4</span></p>
+                            <p className="text-uppercase">Black<span className="float-right">$4</span></p>
+                            <p className="text-uppercase">Milk<span className="float-right">$4</span></p>
                         </div>
                     </div>
 
@@ -58,3 +59,4 @@ class MenuT extends Component {
 }
 
 
+export default MenuT;
