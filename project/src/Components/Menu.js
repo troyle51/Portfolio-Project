@@ -9,9 +9,9 @@ class MenuT extends Component {
             <div className="container bg-white">
                     <div className="row row-contentd-flex justify-content-center mx-auto">
                         <div className="col-10 pb-5 text-center">
-
-                            <h1 className="quicksand-font header text-uppercase">Menu</h1>
-
+                            <br/>
+                            <h1 className="quicksand-font header text-uppercase contactHeader">Menu</h1>
+                            <hr/>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center">
@@ -36,7 +36,7 @@ class MenuT extends Component {
                             <p className="text-uppercase">Milk<span className="float-right">$4</span></p>
                         </div>
                     </div>
-
+                    <hr/>
                     <div className="row d-flex justify-content-center">
                         <div className="col-6 pb-5 text-center">
                             <h4 className="text-center quicksand-font text-uppercase">Toppings</h4>
@@ -52,6 +52,7 @@ class MenuT extends Component {
                             <p className="text-uppercase">No Ice, Less Ice, Regular Ice</p>
                         </div>
                     </div>
+                    <hr/>
             </div>
         );
     }
