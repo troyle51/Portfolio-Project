@@ -15,7 +15,7 @@ class Header extends Component {
 
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
-        this.handleLogin = this.handleLogin.bind(this);
+        this.handleLogin = this.handleOrder.bind(this);
     }
 
     toggleNav() {
@@ -30,7 +30,7 @@ class Header extends Component {
         });
     }
 
-    handleLogin(event) {
+    handleOrder(event) {
         alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
         this.toggleModal();
         event.preventDefault();
