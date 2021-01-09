@@ -32,9 +32,12 @@ render() {
             return (
                 <React.Fragment>
                     <Header />
-                            {/* <Home /> */}
-                            <MenuT />
-                            {/* <Contact /> */}
+                        <Switch >
+                            <Route exact path="/" component={Home} />
+                            <Route path="/menu" component={MenuT} />
+                            <Route path="/aboutus" component={Contact} />
+                            <Route default component={Home} />
+                        </Switch>
                     <Footer />
                 </React.Fragment>
             );

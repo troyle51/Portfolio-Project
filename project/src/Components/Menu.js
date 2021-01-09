@@ -52,7 +52,6 @@ class MenuT extends Component {
                             <p className="text-uppercase">No Ice, Less Ice, Regular Ice</p>
                         </div>
                     </div>
-
             </div>
         );
     }
