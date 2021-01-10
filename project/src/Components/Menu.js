@@ -4,11 +4,18 @@ class MenuT extends Component {
 
     render() {
         return(
+            
 
             <div className="container bg-white">
+                    <div className="col-md order">
+                        <br />
+                        <h1 className="contactHeader">Order</h1>
+                        <div>Please call us to place your order</div>
+                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-215-555-1234</a>
+                    </div>
+                    <hr />
                     <div className="row row-contentd-flex justify-content-center mx-auto">
                         <div className="col-10 pb-5 text-center">
-                            <br/>
                             <h1 className="quicksand-font header text-uppercase contactHeader">Menu</h1>
                             <hr/>
                         </div>
@@ -51,7 +58,7 @@ class MenuT extends Component {
                             <p className="text-uppercase">No Ice, Less Ice, Regular Ice</p>
                         </div>
                     </div>
-                    <hr/>
+                    <hr />
             </div>
         );
     }

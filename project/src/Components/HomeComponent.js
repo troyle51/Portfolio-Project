@@ -9,6 +9,7 @@ function Home(props) {
                 <div className="col-md m-1">
                     <CarouselApp />
                     <Map />
+                    <br />
                 </div>
             </div>
         </div>

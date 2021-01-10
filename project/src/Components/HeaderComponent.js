@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -15,7 +15,7 @@ class Header extends Component {
 
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
-        this.handleLogin = this.handleOrder.bind(this);
+        // this.handleLogin = this.handleOrder.bind(this);
     }
 
     toggleNav() {
@@ -30,11 +30,11 @@ class Header extends Component {
         });
     }
 
-    handleOrder(event) {
-        alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
-        this.toggleModal();
-        event.preventDefault();
-    }
+    // handleOrder(event) {
+    //     alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
+    //     this.toggleModal();
+    //     event.preventDefault();
+    // }
 
     render() {
         return (
@@ -76,6 +76,11 @@ class Header extends Component {
                                     </NavLink>
                                     </NavItem>
                                     <NavItem>
+                                        <NavLink className="nav-link" to="/contactus">
+                                            <i className="fa fa-address-card fa-lg" /> Contact
+                                    </NavLink>
+                                    </NavItem>
+                                    <NavItem>
                                         <NavLink className="nav-link" to="/aboutus">
                                             <i className="fa fa-info fa-lg" /> About
                                     </NavLink>
@@ -84,17 +89,16 @@ class Header extends Component {
                                 <Nav className="ml-auto">
                                 <div className="row">
                                     <div className="col">
-                                        <Button onClick={this.toggleModal} className="btn btn-lg btn-color reserveButton" id="reserveButton">Order</Button>
+                                    <Link to={'/menu'}><Button className="btn btn-lg btn-color">Order</Button></Link>
                                     </div>
                                 </div>
                                 </Nav>
                             </Collapse>
                         </div>
-
                     </Navbar>
                 </Jumbotron>
 
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                {/* <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader className="bg-success text-white" toggle={this.toggleModal}>Order</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleLogin}>
@@ -118,7 +122,7 @@ class Header extends Component {
                             <Button type="submit" value="submit" color="primary">Login</Button>
                         </Form>
                     </ModalBody>
-                </Modal>
+                </Modal> */}
             </React.Fragment>
         );
     }

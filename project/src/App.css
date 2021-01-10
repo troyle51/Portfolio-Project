@@ -1,9 +1,10 @@
-body {
+html, body {
   font-family: 'Segoe UI';
   background-image: linear-gradient(to bottom, transparent,white), url("./img/189.jpg");
   background-size: tile;
   background-position: center;
-
+  height: 100%;
+  width: 100%;
 }
 
 h1, h2, h3 {
@@ -22,14 +23,23 @@ h1.contactHeader {
   color: black;
 }
 
+h2.orderHeader {
+  color: black;
+}
+
+.order {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
 .site-footer {
-  background: white;
   padding: 20px 0;
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
+  bottom: 0;
   position: relative;
+  display:block;
+  width: 100%;
+  background: white;
 }
 
 .jumbotron {

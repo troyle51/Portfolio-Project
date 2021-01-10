@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import MenuT from './Menu';
+import About from './AboutComponent';
 import Contact from './ContactComponent';
 import { MENU } from '../shared/menu';
 import Home from './HomeComponent';
@@ -30,7 +31,8 @@ render() {
                         <Switch >
                             <Route exact path="/" component={Home} />
                             <Route path="/menu" component={MenuT} />
-                            <Route path="/aboutus" component={Contact} />
+                            <Route path="/contactus" component={Contact} />
+                            <Route path="/aboutus" component={About} />
                             <Route default component={Home} />
                         </Switch>
                     <Footer />
